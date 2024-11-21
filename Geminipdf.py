@@ -1,3 +1,28 @@
+"""
+Author: Nirjhar Chatterjee
+Date: 2024-11-21
+Description: This script retrieves PDF paths from a database, extracts text, and uses the Gemini AI API to generate MCQs.
+
+Version: 1.0
+License: Opensource
+Email: nirjhar.chatterjee@gmail.com
+
+-----------------------------------------------------
+This script is part of the PDF Processing with Gemini AI project.
+It integrates database access, PDF text extraction, and AI-powered
+content generation using the Gemini AI API.
+
+Dependencies:
+- PyPDF2
+- google-generativeai
+- mysql-connector-python
+
+Usage:
+- Run this script after setting up the environment as per the README.
+- Ensure database connectivity and API key configuration.
+-----------------------------------------------------
+"""
+
 import PyPDF2  # Library to extract text from PDF
 import google.generativeai as genai
 import mysql.connector as con
